@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Начать обмен</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0ebf8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #4b0082;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 25px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #4b0082;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    textarea { height: 70px; }
+
+    button {
+      margin-top: 18px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover { background-color: #5e00a3; }
+
+    .rules, .examples, .contact {
+      max-width: 700px;
+      margin: 35px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .examples .cards {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      width: 150px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #4b0082;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .examples .cards {
+         flex-direction: column; 
+        }
+      .card {
+         width: 100%;
+          max-width: 250px; 
+          margin: auto; 
+        }
+    }
+  </style>
+</head>
+<body>
+
+<header>Начать обмен книгами</header>
+
+<div class="intro">
+  <h2>Добавьте книгу для обмена</h2>
+  <p>Заполните форму и ваша книга появится в каталоге.</p>
+</div>
+
+<form action="page3.html" method="get">
+  <label>Название книги:</label>
+  <input type="text" required>
+
+  <label>Автор:</label>
+  <input type="text" required>
+
+  <label>Краткое описание:</label>
+  <textarea required></textarea>
+
+  <label>Состояние книги:</label>
+  <select required>
+    <option disabled selected>Выберите состояние</option>
+    <option>Новая</option>
+    <option>Отличное</option>
+    <option>Хорошее</option>
+    <option>Есть следы использования</option>
+  </select>
+
+  <label>Город / Место обмена:</label>
+  <input type="text" required>
+
+  <label>Контакт (Telegram / WhatsApp):</label>
+  <input type="text" placeholder="@username" required>
+
+  <button type="submit">Добавить книгу</button>
+</form>
+
+<div class="rules">
+  <h3>Правила обмена</h3>
+  <ul>
+    <li>Обмен происходит по договорённости двух сторон.</li>
+    <li>Уважайте друг друга и приходите вовремя.</li>
+    <li>Передавайте книги в аккуратном виде.</li>
+    <li>Если книга не подходит — не стесняйтесь отказаться.</li>
+  </ul>
+</div>
+
+<div class="examples">
+  <h3>Примеры обмена</h3>
+
+  <div class="cards">
+    <div class="card">
+      <img src="джейн эйр.jpg" alt="">
+      <p>Шарлотта Бронте → Джейн эйр</p>
+    </div>
+
+    <div class="card">
+      <img src="агата кристи.jpg" alt="">
+      <p>Агата Кристи → десять негритят</p>
+    </div>
+  </div>
+</div>
+
+<div class="contact">
+  <h3>Если есть вопросы</h3>
+  <p>Telegram менеджера: <b>@aruzhanxwq</b></p>
+</div>
+
+<footer>© 2025 Book Exchange</footer>
+
+</body>
+</html>
